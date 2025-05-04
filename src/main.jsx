@@ -7,12 +7,12 @@ import { store, persistor } from "./redux/store";
 import App from "./App";
 import "./styles/index.css";
 
-import Loader from "./components/Shared/Loader/Loader";
+import MiniLoader from "./components/Shared/MiniLoader/MiniLoader";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Provider store={store}>
-      <PersistGate loading={<Loader />} persistor={persistor}>
+      <PersistGate loading={<MiniLoader />} persistor={persistor}>
         <BrowserRouter>
           <App />
         </BrowserRouter>

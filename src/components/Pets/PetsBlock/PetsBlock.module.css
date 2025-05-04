@@ -1,0 +1,58 @@
+.container {
+  margin-top: 20px;
+}
+
+.titleWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0 20px;
+}
+
+.title {
+  color: #2b2b2a;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  margin: 0;
+}
+
+.addPetLink {
+  border-radius: 30px;
+  background-color: #f6b83d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  padding: 10px 16px;
+  text-decoration: none;
+  transition: transform 150ms linear;
+}
+
+.addPetLink:hover {
+  transform: scale(1.1);
+}
+
+.addPetLink span {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.42px;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .addPetLink {
+    padding: 10px 20px;
+  }
+
+  .addPetLink span {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.48px;
+  }
+}

@@ -1,0 +1,26 @@
+.friendsListContainer {
+  margin-top: 40px;
+}
+
+.emptyList {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 18px;
+  color: rgba(38, 38, 38, 0.7);
+}
+
+@media screen and (min-width: 768px) {
+  .friendsListContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 44px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .friendsListContainer {
+    gap: 28px 20px;
+    margin-top: 60px;
+  }
+}

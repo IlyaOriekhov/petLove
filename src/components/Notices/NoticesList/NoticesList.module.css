@@ -1,0 +1,25 @@
+.noticesListWrap {
+  margin-bottom: 44px;
+}
+
+.emptyList {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 18px;
+  color: rgba(38, 38, 38, 0.7);
+}
+
+@media screen and (min-width: 768px) {
+  .noticesListWrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .noticesListWrap {
+    gap: 40px 32px;
+  }
+}

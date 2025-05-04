@@ -1,0 +1,106 @@
+.button {
+  border-radius: 30px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  transition: transform 150ms linear, background-color 150ms linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button:hover:not(:disabled) {
+  transform: scale(1.1);
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.primary {
+  background-color: #f6b83d;
+  color: #ffffff;
+}
+
+.primary:hover:not(:disabled) {
+  background-color: #f9b020;
+}
+
+.secondary {
+  background-color: #fff4df;
+  color: #f6b83d;
+}
+
+.secondary:hover:not(:disabled) {
+  background-color: #fbe7c1;
+}
+
+.outline {
+  background-color: transparent;
+  border: 1px solid rgba(38, 38, 38, 0.15);
+  color: #262626;
+}
+
+.outline:hover:not(:disabled) {
+  border-color: #f6b83d;
+}
+
+.danger {
+  background-color: #ef2447;
+  color: #ffffff;
+}
+
+.danger:hover:not(:disabled) {
+  background-color: #d91f3e;
+}
+
+.small {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.24px;
+  padding: 8px 16px;
+  height: 32px;
+}
+
+.medium {
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.42px;
+  padding: 12px 24px;
+  height: 42px;
+}
+
+.large {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.48px;
+  padding: 14px 32px;
+  height: 48px;
+}
+
+@media screen and (min-width: 768px) {
+  .small {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.28px;
+    padding: 10px 20px;
+    height: 38px;
+  }
+
+  .medium {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.48px;
+    padding: 14px 30px;
+    height: 48px;
+  }
+
+  .large {
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.54px;
+    padding: 16px 40px;
+    height: 56px;
+  }
+}

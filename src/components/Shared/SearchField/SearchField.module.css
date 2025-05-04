@@ -1,0 +1,89 @@
+.inputWrap {
+  position: relative;
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  color: rgba(38, 38, 38, 0.5);
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.42px;
+  border-radius: 30px;
+  border: 1px solid rgba(38, 38, 38, 0.15);
+  padding: 12px 40px 12px 12px;
+  height: 42px;
+}
+
+.input:focus {
+  outline: none;
+  border: 1px solid #f6b83d;
+}
+
+.buttonSearch {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+
+.searchIcon {
+  width: 18px;
+  height: 18px;
+  display: block;
+  visibility: visible;
+}
+
+.buttonClear {
+  position: absolute;
+  right: 36px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+
+.clearIcon {
+  width: 18px;
+  height: 18px;
+  display: block;
+  visibility: visible;
+}
+
+@media screen and (min-width: 768px) {
+  .input {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.48px;
+    height: 48px;
+    padding: 14px 45px 14px 16px;
+  }
+
+  .searchIcon,
+  .clearIcon {
+    width: 22px;
+    height: 22px;
+  }
+
+  .buttonSearch {
+    right: 16px;
+  }
+
+  .buttonClear {
+    right: 45px;
+  }
+}

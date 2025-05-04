@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.pageButton {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(38, 38, 38, 0.2);
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 150ms linear, color 150ms linear;
+}
+
+.pageButton:hover:not(:disabled) {
+  border-color: #f6b83d;
+}
+
+.pageButton:disabled {
+  border: 1px solid rgba(38, 38, 38, 0.05);
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.activePageButton {
+  background-color: #f6b83d;
+  color: #ffffff;
+  border: none;
+}
+
+.ellipsis {
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(38, 38, 38, 0.05);
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 446px;
+    margin: 40px auto;
+  }
+}

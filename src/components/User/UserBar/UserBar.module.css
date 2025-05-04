@@ -1,0 +1,59 @@
+
+.link {
+  text-decoration: none;
+}
+
+.button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff4df;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.userName {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .button {
+    width: 50px;
+    height: 50px;
+  }
+
+  .avatar {
+    width: 50px;
+    height: 50px;
+  }
+
+  .userName {
+    display: flex;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.6px;
+    color: #262626;
+  }
+
+  .homeUserName {
+    color: #ffffff;
+  }
+}

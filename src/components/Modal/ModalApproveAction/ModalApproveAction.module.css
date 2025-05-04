@@ -1,0 +1,150 @@
+.modalOverlay {
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modalContent {
+  position: relative;
+  z-index: 20;
+  background-color: #ffffff;
+  border-radius: 30px;
+  padding: 40px 28px;
+  display: inline-flex;
+  flex-direction: column;
+  max-width: 335px;
+  width: 95%;
+  max-height: 95vh;
+  overflow: auto;
+}
+
+.closeButton {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  right: 20px;
+  top: 20px;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.closeButton svg {
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: #262626;
+  transition: transform 150ms linear, stroke 150ms linear;
+}
+
+.closeButton svg:hover {
+  transform: scale(1.2);
+  stroke: #f6b83d;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.iconWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  background-color: #fff4df;
+  margin: 0 auto;
+}
+
+.catIcon {
+  width: 44px;
+  height: 44px;
+}
+
+.text {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.6px;
+  text-align: center;
+  margin: 20px 0 28px;
+}
+
+.buttonWrap {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  justify-content: center;
+}
+
+.buttonConfirm {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: -0.42px;
+  width: 137px;
+  height: 42px;
+  border-radius: 30px;
+  background: #f6b83d;
+  border: none;
+  cursor: pointer;
+  transition: transform 150ms linear, background-color 150ms linear;
+}
+
+.buttonConfirm:hover {
+  transform: scale(1.1);
+  background-color: #f9b020;
+}
+
+.buttonCancel {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: -0.42px;
+  width: 134px;
+  height: 42px;
+  border-radius: 30px;
+  background: rgba(38, 38, 38, 0.05);
+  border: none;
+  cursor: pointer;
+  transition: transform 150ms linear, background-color 150ms linear;
+}
+
+.buttonCancel:hover {
+  transform: scale(1.1);
+  background-color: #fbe7c1;
+}
+
+@media screen and (min-width: 768px) {
+  .modalContent {
+    max-width: 448px;
+    padding: 80px;
+  }
+
+  .text {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.72px;
+  }
+
+  .buttonConfirm,
+  .buttonCancel {
+    width: 140px;
+    height: 48px;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.48px;
+  }
+}

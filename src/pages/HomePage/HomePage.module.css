@@ -1,5 +1,103 @@
-.wrapper {
-  padding: 40px;
-  font-size: 24px;
-  text-align: center;
+.container {
+  margin: 10px 0 10px;
+}
+
+.titleWrap {
+  border-radius: 30px;
+  background-color: #f6b83d;
+  padding: 112px 20px 50px;
+  margin-top: -80px;
+}
+
+.title {
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -1.5px;
+  margin-bottom: 24px;
+}
+
+.titleSpan {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -1.5px;
+}
+
+.text {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.28px;
+}
+
+.image {
+  width: 100%;
+  border-radius: 30px;
+  margin-top: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    margin: 16px 0 16px;
+  }
+
+  .titleWrap {
+    border-radius: 60px;
+    padding: 178px 32px 44px;
+    margin-top: -116px;
+  }
+
+  .title {
+    font-size: 80px;
+    line-height: 77px;
+    letter-spacing: -2.4px;
+    margin-bottom: 32px;
+  }
+
+  .titleSpan {
+    font-size: 80px;
+    line-height: 77px;
+    letter-spacing: -2.4px;
+  }
+
+  .image {
+    border-radius: 60px;
+  }
+
+  .text {
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.36px;
+    width: 255px;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .titleWrap {
+    display: flex;
+    padding: 178px 64px 32px;
+    margin-top: -116px;
+  }
+
+  .title {
+    font-size: 90px;
+    line-height: 87px;
+    letter-spacing: -2.7px;
+    width: 760px;
+    margin-bottom: 0;
+  }
+
+  .titleSpan {
+    font-size: 90px;
+    line-height: 87px;
+    letter-spacing: -2.7px;
+  }
+
+  .text {
+    align-self: flex-end;
+  }
 }

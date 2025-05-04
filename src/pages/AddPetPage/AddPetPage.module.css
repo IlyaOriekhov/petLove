@@ -1,0 +1,17 @@
+.container {
+  margin: 20px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    margin: 32px 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    display: flex;
+    gap: 32px;
+    margin: 40px 0;
+  }
+}

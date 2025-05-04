@@ -1,0 +1,62 @@
+.container {
+  margin-top: 40px;
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tabButton {
+  color: #262626;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.42px;
+  border-radius: 30px;
+  background-color: #ffffff;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 150ms linear, color 150ms linear;
+}
+
+.tabButton:hover {
+  background-color: #f6b83d;
+  color: #ffffff;
+}
+
+.activeTabButton {
+  background-color: #f6b83d;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    margin-top: 32px;
+  }
+
+  .buttonContainer {
+    gap: 8px;
+    margin-bottom: 32px;
+  }
+
+  .tabButton {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.48px;
+    padding: 14px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 664px;
+    margin-top: 0;
+  }
+
+  .buttonContainer {
+    margin: 40px 0 32px;
+  }
+}

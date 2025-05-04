@@ -1,0 +1,65 @@
+.nav {
+  display: none;
+}
+
+.loginLink {
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.48px;
+  text-transform: uppercase;
+  padding: 15px 35px;
+  border-radius: 30px;
+  background-color: #f6b83d;
+  transition: transform 150ms linear, background-color 150ms linear,
+    color 150ms linear;
+  text-decoration: none;
+}
+
+.loginLink:hover {
+  transform: scale(1.1);
+  background-color: #f9b020;
+}
+
+.homeLoginLink {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.homeLoginLink:hover {
+  color: #f6b83d;
+  background-color: #fff4df;
+}
+
+.registerLink {
+  color: #f6b83d;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.48px;
+  text-transform: uppercase;
+  padding: 15px 20px;
+  border-radius: 30px;
+  background-color: #fff4df;
+  transition: transform 150ms linear, background-color 150ms linear;
+  text-decoration: none;
+}
+
+.registerLink:hover {
+  transform: scale(1.1);
+  background-color: #fbe7c1;
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .nav {
+    display: flex;
+  }
+}
