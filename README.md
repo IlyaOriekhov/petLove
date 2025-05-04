@@ -60,19 +60,22 @@ cd petlove
 
 Install dependencies
 
-```bash npm install
+```bash
+npm install
 
 ```
 
 Start the project in development mode
 
-```bash npm run dev
+```bash
+npm run dev
 
 ```
 
 Build the project for production
 
-```bash npm run build
+```bash
+npm run build
 
 ```
 
